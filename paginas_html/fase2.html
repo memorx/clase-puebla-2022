@@ -1,22 +1,107 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <p><span style="font-weight: 400;">En esta actividad el alumno generar&aacute; la maquetaci&oacute;n de su proyecto. En primer lugar el alumno realizar&aacute; la maquetaci&oacute;n de la actividad, cuando se finalice el alumno ajustar&aacute; con elementos relacionados a su proyecto.</span></p>
 <p><strong>Instrucciones:</strong></p>
-<p><span style="font-weight: 400;">Dentro de la carpeta de tu proyecto crea un documento llamado practica_html.html</span></p>
-<p><span style="font-weight: 400;">Dentro del elemento &lt;</span><em><span style="font-weight: 400;">body&gt;</span></em><span style="font-weight: 400;"> agregar un &lt;</span><em><span style="font-weight: 400;">div&gt;</span></em><span style="font-weight: 400;"> el cual contiene 3 bloques internos:</span></p>
-<p><span style="font-weight: 400;">En el primer bloque se deber&aacute; definir con el elemento &lt;header&gt; y en el agregar el t&iacute;tulo principal del documento y una imagen con un tama&ntilde;o de 120x120px,</span></p>
-<p><span style="font-weight: 400;">En el segundo bloque se utilizar&aacute; un elemento &lt;div&gt; y agregar 4 secciones con el elemento &lt;section&gt; y en cada una de ellas agregar un t&iacute;tulo, una descripci&oacute;n, un precio y una imagen con un tama&ntilde;o de 200x200px&nbsp;</span></p>
-<p><span style="font-weight: 400;">En el tercer bloque se agrega un pie de p&aacute;gina mediante el uso del atributo &lt;footer&gt; que contenga la misma imagen que en el elemento &lt;header&gt; esta vez la imagen debe ser de 80x80px y por &uacute;ltimo agregar 2 p&aacute;rrafos para a&ntilde;adir informaci&oacute;n adicional, utilizar los tributos </span><em><span style="font-weight: 400;">style, width, height.+</span></em></p>
-<p><em><span style="font-weight: 400;">Estructura:</span></em></p>
-<p><em><span style="font-weight: 400;"><img src="https://storage.googleapis.com/huawei-code/images/M1_structure.png" width="382" height="451" /></span></em></p>
-<p><em><span style="font-weight: 400;">Resguarda la informaci&oacute;n en tu repositorio, ya que esto forma parte de la evaluaci&oacute;n del proyecto final.<br /><br />&iexcl;&Eacute;xito!</span></em></p>
-    
-</body>
-</html>
+<p><strong>En esta actividad continuar&aacute;s haciendo mejoras a tu proyecto, por ello ahora que has aprendido sobre el modelo de cajas, es tu turno de implementarlo.</strong></p>
+<p>&nbsp;</p>
+<p><strong>En el m&oacute;dulo 1, definiste tu proyecto y dentro creaste un archivo index.html en visual studio code, ahora trabajar&aacute;s sobre este mismo documento.</strong></p>
+<p>&nbsp;</p>
+<p><span style="font-weight: 400;">Dentro del documento index.html:</span></p>
+<p>&nbsp;</p>
+<ul>
+<li aria-level="1"><strong>A&ntilde;ade la etiqueta &lt;style&gt; &lt;/style&gt; dentro de las etiquetas de &lt;body&gt; &lt;/body&gt; Por ejemplo:</strong></li>
+</ul>
+<p>&nbsp;</p>
+<p><span style="font-weight: 400;">&lt;!DOCTYPE html&gt;</span></p>
+<p><span style="font-weight: 400;">&lt;html&gt;</span></p>
+<p><span style="font-weight: 400;">&nbsp;&nbsp;&lt;head&gt;</span></p>
+<p><span style="font-weight: 400;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;title&gt; Mi Proyecto &lt;/title&gt;</span></p>
+<p><span style="font-weight: 400;">&nbsp;&nbsp;&lt;/head&gt;</span></p>
+<p><span style="font-weight: 400;">&nbsp;&nbsp;&lt;body&gt;</span></p>
+<p><span style="font-weight: 400;">&nbsp;&nbsp;&nbsp;&nbsp;&lt;style&gt;</span></p>
+<p><span style="font-weight: 400;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/* Dentro de esta etiqueta se definen los estilos a los ids y clases */</span></p>
+<p><span style="font-weight: 400;">&nbsp;&nbsp;&nbsp;&nbsp;&lt;/style&gt;</span></p>
+<p><span style="font-weight: 400;">&nbsp;&nbsp;&nbsp;&nbsp;&lt;img src=&rdquo;mi_imagen.png&rdquo;&gt;</span></p>
+<p><span style="font-weight: 400;">&nbsp;&nbsp;&lt;/body&gt;</span></p>
+<p><span style="font-weight: 400;">&lt;/html&gt;</span></p>
+<p>&nbsp;</p>
+<ul>
+<li aria-level="1"><strong>Definir una clase para altura y anchura de im&aacute;genes. Por ejemplo:</strong></li>
+</ul>
+<p>&nbsp;</p>
+<p><span style="font-weight: 400;">&lt;!DOCTYPE html&gt;</span></p>
+<p><span style="font-weight: 400;">&lt;html&gt;</span></p>
+<p><span style="font-weight: 400;">&nbsp;&nbsp;&lt;head&gt;</span></p>
+<p><span style="font-weight: 400;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;title&gt; Mi Proyecto &lt;/title&gt;</span></p>
+<p><span style="font-weight: 400;">&nbsp;&nbsp;&lt;/head&gt;</span></p>
+<p><span style="font-weight: 400;">&nbsp;&nbsp;&lt;body&gt;</span></p>
+<p><span style="font-weight: 400;">&nbsp;&nbsp;&nbsp;&nbsp;&lt;style&gt;</span></p>
+<p><span style="font-weight: 400;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/* Dentro de esta etiqueta se definen los estilos a los ids y clases */</span></p>
+<p><span style="font-weight: 400;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.my-image {</span></p>
+<p><span style="font-weight: 400;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;width: 200px;</span></p>
+<p><span style="font-weight: 400;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;height: 200px;</span></p>
+<p><span style="font-weight: 400;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}</span></p>
+<p><span style="font-weight: 400;">&nbsp;&nbsp;&nbsp;&nbsp;&lt;/style&gt;</span></p>
+<p><span style="font-weight: 400;">&nbsp;&nbsp;&nbsp;&nbsp;&lt;img src=&rdquo;mi_imagen.png&rdquo; class=&rdquo;my-image&rdquo;&gt;</span></p>
+<p><span style="font-weight: 400;">&nbsp;&nbsp;&lt;/body&gt;</span></p>
+<p><span style="font-weight: 400;">&lt;/html&gt;</span></p>
+<p>&nbsp;</p>
+<ul>
+<li aria-level="1"><strong>Generar una clase que se a&ntilde;ada a una etiqueta &lt;button&gt; o &lt;a&gt; que tenga un color de fondo, un margen ovalado (<em>margin-radius</em>)</strong></li>
+</ul>
+<ul>
+<li aria-level="1">A&ntilde;adir una clase (<em>class</em>) que haga que mi color de bot&oacute;n cambie de color cuando el mouse se posicione sobre el elemento (tip: revisa la documentaci&oacute;n de hover <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/:hover">https://developer.mozilla.org/en-US/docs/Web/CSS/:hover</a>)</li>
+</ul>
+<ul>
+<li aria-level="1">Cambia el color de fondo de tu p&aacute;gina, navbar o encabezados</li>
+</ul>
+<ul>
+<li aria-level="1">Generar una barra de navegaci&oacute;n horizontal para ser usada como tu men&uacute;, te recomendamos que te inspires en <a href="https://www.w3schools.com/csS/css_navbar_horizontal.asp">https://www.w3schools.com/csS/css_navbar_horizontal.asp</a></li>
+</ul>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p><span style="font-weight: 400;">Ahora es momento que hagamos una mejor pr&aacute;ctica, para ello:</span></p>
+<p>&nbsp;</p>
+<ul>
+<li aria-level="1"><strong>Dentro de tu proyecto crea un archivo llamada style.css</strong></li>
+</ul>
+<ul>
+<li aria-level="1">Copia y pega en style.css el contenido que hayas puesto dentro de las etiquetas &lt;style&gt;&lt;/style&gt; de tu archivo index.html. Y guarda tu documento. Ejemplo:</li>
+</ul>
+<p>&nbsp;</p>
+<p><span style="font-weight: 400;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.my-image {</span></p>
+<p><span style="font-weight: 400;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;width: 200px;</span></p>
+<p><span style="font-weight: 400;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;height: 200px;</span></p>
+<p><span style="font-weight: 400;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}</span></p>
+<p>&nbsp;</p>
+<ul>
+<li aria-level="1"><strong>Elimina las etiquetas de &lt;style&gt; Ejemplo:</strong></li>
+</ul>
+<p>&nbsp;</p>
+<p><span style="font-weight: 400;">&lt;!DOCTYPE html&gt;</span></p>
+<p><span style="font-weight: 400;">&lt;html&gt;</span></p>
+<p><span style="font-weight: 400;">&nbsp;&nbsp;&lt;head&gt;</span></p>
+<p><span style="font-weight: 400;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;title&gt; Mi Proyecto &lt;/title&gt;</span></p>
+<p><span style="font-weight: 400;">&nbsp;&nbsp;&lt;/head&gt;</span></p>
+<p><span style="font-weight: 400;">&nbsp;&nbsp;&lt;body&gt;</span></p>
+<p><span style="font-weight: 400;">&nbsp;&nbsp;&nbsp;&nbsp;&lt;img src=&rdquo;mi_imagen.png&rdquo; class=&rdquo;my-image&rdquo;&gt;</span></p>
+<p><span style="font-weight: 400;">&nbsp;&nbsp;&lt;/body&gt;</span></p>
+<p><span style="font-weight: 400;">&lt;/html&gt;</span></p>
+<p>&nbsp;</p>
+<ul>
+<li aria-level="1"><strong>En cuanto se eliminan las etiquetas, volvemos a ver un index.html sin estilos, as&iacute; que para ello hay que llamar a nuestro archivo style.css, para ello dentro de la etiqueta &lt;head&gt; agrega una etiqueta &lt;link&gt; Ejemplo (tip: https://www.w3schools.com/tags/tag_link.asp)</strong></li>
+</ul>
+<p>&nbsp;</p>
+<p><span style="font-weight: 400;">&lt;!DOCTYPE html&gt;</span></p>
+<p><span style="font-weight: 400;">&lt;html&gt;</span></p>
+<p><span style="font-weight: 400;">&nbsp;&nbsp;&lt;head&gt;</span></p>
+<p><span style="font-weight: 400;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;title&gt; Mi Proyecto &lt;/title&gt;</span></p>
+<p><span style="font-weight: 400;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;link rel=&rdquo;stylesheet&rdquo; href=&rdquo;style.css&rdquo;&gt;</span></p>
+<p><span style="font-weight: 400;">&nbsp;&nbsp;&lt;/head&gt;</span></p>
+<p><span style="font-weight: 400;">&nbsp;&nbsp;&lt;body&gt;</span></p>
+<p><span style="font-weight: 400;">&nbsp;&nbsp;&nbsp;&nbsp;&lt;img src=&rdquo;mi_imagen.png&rdquo; class=&rdquo;my-image&rdquo;&gt;</span></p>
+<p><span style="font-weight: 400;">&nbsp;&nbsp;&lt;/body&gt;</span></p>
+<p><span style="font-weight: 400;">&lt;/html&gt;</span></p>
+<ul>
+<li style="font-weight: 400;" aria-level="1"><span style="font-weight: 400;">Con esto hemos separado nuestro c&oacute;digo HTML y CSS, esta es una buena pr&aacute;ctica que con el paso del tiempo permite que el c&oacute;digo se pueda mantener actualizado.</span></li>
+</ul>
+<p>&nbsp;</p>
+<p><span style="font-weight: 400;">Por &uacute;ltimo, recuerda que el objetivo de esta actividad es que tu proyecto se vea armonioso, siempre piensa que tus usuarios la van a utilizar y que los estilos ayudar&aacute;n a hacer que su experiencia en el sitio sea m&aacute;s placentera, por lo que si necesitas m&aacute;s estilos los puedes a&ntilde;adir dentro de style.css y en index.html los utilizas a trav&eacute;s de los atributos class o id.</span></p>
+<p><span style="font-weight: 400;">Resguarda la informaci&oacute;n en tu repositorio, ya que esto forma parte de la evaluaci&oacute;n del proyecto final.<br /><br />&iexcl;&Eacute;xito!</span></p>
