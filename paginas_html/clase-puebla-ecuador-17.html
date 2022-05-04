@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <style>
+            .boton-verde {
+                color: green;
+                font-weight: bold;
+            }
+
+            .boton-rojo {
+                background-color: red;
+                color: white;
+            }
+
+            .boton-azul {
+                background-color: blue;
+                color: yellow;
+            }
+
+            .boton-rosa {
+                background-color: pink;
+                color: brown;
+            }
+
+            /* #login {
+                color: green;
+                font-weight: bold;
+            } */
+
+        </style>
+
+        <button onclick="cambiar_imagen('/clase-puebla-2022/imagenes/Xbox-console.jpg')" id="login_1" class="boton-verde">
+            Cambiar imagen por la de xbox
+        </button>
+
+        <button onclick="cambiar_imagen('/clase-puebla-2022/imagenes/switch-console.jpg')" id="login_2" class="boton-verde">
+            Cambiar imagen por la de nintendo
+        </button>
+
+        <button onclick="cambiar_imagen('/clase-puebla-2022/imagenes/playstation-5-console.jpg')" id="login_3" class="boton-verde">
+            Cambiar imagen por la de playstation
+        </button>
+
+        <hr/>
+
+        <button onclick="cambiar_fondo()" id="login_4" class="boton-rosa">
+            anadir clase
+        </button>
+
+        <button onclick="quitar_fondo()" id="login_4" class="boton-rosa">
+            quitar clase
+        </button>
+
+
+        <button id="boton_prueba"> 
+            Boton de prueba
+        </button>
+
+        <p id="parrafo"> </p> 
+
+        <span>etiqueta span 1</span>
+        <span>etiqueta span 2</span>
+        <span>etiqueta span 3</span>
+        <span>etiqueta span 4</span>
+        <span>etiqueta span 5</span>
+
+        <p class="color-rojo">
+            Contenido viejo
+        </p> 
+
+        <img id="imagen_auto" src="/clase-puebla-2022/imagenes/toyota.jpg" />
+
+
+        <script>
+            var mi_boton = document.getElementById("login");
+            //mi_boton.innerHTML = "Nuevo contenido";
+
+            function resta_dos_numeros(num_1, num_2) {
+                var resultado = num_1 - num_2;
+                return resultado;
+            }
+
+            var mi_parrafo = document.getElementById("parrafo");
+            mi_parrafo.innerHTML = "Si Juan tiene 10 manzanas y Yedid le compra 5, le quedan " + resta_dos_numeros(10,5) + " manzanas";
+
+            var mis_spans = document.getElementsByTagName("button");
+            console.log(mis_spans);
+
+            var mi_div = document.getElementsByClassName("color-rojo");
+            console.log(mi_div);
+            mi_div[0].innerHTML = "El contenido ha cambiado";
+
+           var mi_arreglo = ["Negro","Blanco","Rojo"];
+           mi_arreglo[2] = "Azul";
+
+           var mi_imagen = document.getElementById("imagen_auto");
+
+
+          var boton_a_modificar = document.getElementById("boton_prueba")
+          console.log("boton", boton_a_modificar)
+
+          function cambiar_imagen(nueva_imagen) {
+            mi_imagen.src = nueva_imagen;
+           }
+
+           function cambiar_fondo() {
+                boton_a_modificar.classList.add("boton-azul");
+           }
+
+
+           function quitar_fondo() {
+            boton_a_modificar.classList.remove("boton-azul");
+           }
+
+
+
+            
+
+        </script>
+
+        <!-- <p>
+            Cualquier contenido
+        </p>
+        <ul>
+            <li>Contenido lista 1</li>
+            <li>Contenido lista 2</li>
+            <li>Contenido lista 3</li>
+        </ul> -->
+
+
+        <!-- <script>
+
+            // Definicion: Crear la function
+            // No se esta utilizando
+            function resta_dos_numeros(num_1, num_2) {
+                var resultado = num_1 - num_2;
+                return resultado;
+            }
+
+            // Invocacion de una function: cuando la manos a utlizar
+            console.log("Si Juan tiene 10 manzanas y Yedid le compra 5, le quedan a Juan:", resta_dos_numeros(10,5) );
+            console.log("Si Mathias tiene 30 manzanas y Emanuel le compra 5, le quedan a Mathias:", resta_dos_numeros(30,5) )
+
+
+        </script> -->
+    </body>
+</html>
